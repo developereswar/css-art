@@ -1,0 +1,63 @@
+$blue: #06b8cf;
+$gray: #333;
+$skincolor: #f8cc06;
+
+body{
+    margin: 0;
+}
+
+.drawing_board{
+    display: flex;
+    width:100%;
+    height: 100vh;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+}
+
+.light-lamp{
+    width: 150px;
+    height: 170px;
+    background-color: rgba(235, 235, 235, 0.4);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+    position: relative;
+    .lamp-bottom{
+        position: absolute;
+        width: 153px;
+        height: 50px;
+        background-color: #fff;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        bottom: 0;
+        left: -1.5px;
+        z-index: 9;
+    }
+    .l-plug{
+        width: 15px;
+        height: 70px;
+        background-color: rgb(163, 160, 160);
+        position: absolute;
+        bottom: -50px;
+        left: 30px;
+        border-radius: 10px;
+    }
+
+    .r-plug{
+        width: 15px;
+        height: 70px;
+        background-color: rgb(163, 160, 160);
+        position: absolute;
+        bottom: -50px;
+        right: 30px;
+        border-radius: 10px;
+    }
+}
+
+.light-lamp:hover{
+    background-color: rgb(214, 201, 11);
+    box-shadow: 0 10px 300px rgb(214, 201, 11), 0 10px 200px rgb(177, 165, 8);
+}
